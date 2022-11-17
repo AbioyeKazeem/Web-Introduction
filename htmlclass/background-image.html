@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head> <title></title></head> 
+<style>
+    /** Background image for a whole body of a page 
+    use p { background-image: url ('bck-img.webp')} for paragraph
+    **/
+
+    body {  
+        background-image: url('bck-img.webp');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size:cover;
+    } 
+</style>
+<body>
+
+<p>By default, the background image will repeat itself if it is smaller than the element where it is specified, in this
+    case the body element.</p>
+<!--   
+<picture>
+ Show different images for different screen sizes
+Note: Always specify an <img> element as the last child element of the <picture> element. The <img> element is used by browsers that do not support the <picture> element, or if none of the <source> tags match.
+<source media="(min-width: 650px)" srcset="img_food.jpeg">
+<source media="(min-width: 650px)" srcset="img_car.jpeg">
+<img src="img_girl.jpeg" style="width:auto;">
+</picture>
+-->
+</body>   
+</html>

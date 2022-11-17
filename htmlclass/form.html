@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>  
+<style>
+*{box-sizing: border-box;}
+form{
+    border: 1px solid black;
+    padding: 15px ;
+    background-color: whitesmoke;
+    width: 100%;
+}    
+@media only screen and (max-width: 620px) {
+
+            /* For mobile phones: */
+            .menu,
+            .main,
+            .right {
+                width: 100%;
+            }
+        }
+        
+</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Form </title>    
+</head>    
+<body>
+<form action="#" target="_self" method="get" autocomplete="on">
+<h2>Form Practise</h2>
+<label for="lname">Lastname:</label>
+<input type="text" name="lname" id="lname" size="20" placeholder="Enter your surname" autofocus>
+<label for="fname">Firstname:</label>
+<input type="text" name="fname" id="fname" size="20" placeholder="Enter your first name" required>
+<input type="hidden" name="custid" id="custid" value="34876">
+<label for="birthmon">Birthday Month</label>
+<input type="date" name="birthmon" id="birthmon">
+<p>Note that the form itself is not visible</p>
+<p>Also note that the default width of text input fields is 20 characters.</p>
+<h2>Radio buttons</h2>
+<p>Choose your favourite web language</p>
+<input type="radio" id="html" name="fav_language" value="HTML">
+<label for="html">HTML</label>
+<input type="radio" name="fav_language" id="css" value="CSS">
+<label for="css">CSS</label>
+<input type="radio" name="fav_language" id="javascript" value="Javascript">
+<label for="javascript">Javascript</label>
+<h2>Checkboxes</h2>
+<p>The <b>type="checkbox"</b> defines a checkbox:</p>
+<input type="checkbox" name="vehicle1" id="vehicle1" value="Bike" checked>
+<label for="vehicle1">I have a bike</label>
+<input type="checkbox" name="vehicle2" id="vehicle2" value="Car">
+<label for="vehicle2"> I have a car</label>
+<input type="checkbox" name="vehicle3" id="vehicle3" value="Boat">
+<label for="vehicle3">I have a boat</label>
+<h2>Select option</h2>
+<label for="cars">Choose a car:</label>
+<select name="cars" id="cars">
+<option value="volvo" selected>Volvo</option>
+<option value="saab">Saab</option>
+<option value="fiat">Fiat</option>
+<option value="audi">Audi</option>
+</select>
+<br><br>
+<textarea name="txt" id="txt" cols="30" rows="5" style="width:25%; height:100px; background-color: tomato;color: white;" required placeholder="Type your comment here">
+</textarea>
+<br>
+<input type="submit" value="Submit" style="float:center; background-color: sienna; color: white; width:8%;">
+<br><br>
+<h2>Button sample</h2>
+<button type="button" onclick="alert('You are welcome to my world!')">Click Me</button>
+<br><br>
+<h2>Fieldset</h2>
+<p>Fieldset element is used to group related data in a form</p>
+<p>The legend element defines a caption for the fieldset element.</p>
+<fieldset style="width:100%;">
+<legend><strong>Personality:</strong></legend>    
+<label for="fname">Firstname:</label>
+<input type="text" name="fname" id="fname" value="John" >
+<label for="lname">Lastname:</label>
+<input type="text" name="lname" id="lname" value="Adewale">
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required autocomplete="off">
+<input type="image" src="img_girl.jpeg" alt="submit" width="40" height="40">
+<label for="myfile">select your file</label>
+<input type="file" id="myfile" name="myfile">
+<input type="submit" value="Submit">
+</fieldset>
+
+<h2>dataset</h2>
+<p>The datalist specifies a list of predefined option for an input element</p>
+<input list="browsers" name="browser">
+<datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+</datalist>
+<input type="submit">
+</form>    
+<h2>Output</h2>
+<p>The output element represents the result of a calculation (like one performed by a script).</p>
+<form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    0
+    <input type="range" id="a" name="a" value="50">
+    100 +
+    <input type="number" id="b" name="b" value="50">
+    =
+    <output name="x" for="a b"></output>
+    <br><br>
+    <input type="submit">
+    <input type="reset">
+    <br>
+    <h2>Input type for colour</h2>
+    <label for="favcolor">Select your favourite color</label>
+    <input type="color" id="favcolor" name="favcolor" value="#04AA6D">
+    <br><br>
+    <h2>Input number </h2>
+    <label for="quantity"> Quantity (between 1 and 5):</label>
+    <input type="number" name="quantity" id="quantity" min="1" max="5">
+    <br>
+    <h2>Range Field</h2>
+    <label for="vol">Range of number (between 0 and 50)</label>
+    <input type="range" name="vol" id="vol" min="0" step="10" max="50">
+    <br>
+    <h2>Search Input</h2> 
+    <label for="gserach">Search Google</label>
+    <input type="search" name="gsearch" id="gsearch">
+    <br>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>  
+<title> HTML Link </title>
+<style>
+a:link{
+    color:green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+/**
+a:link, a:visited {
+    background-color: #f44336;
+    color: white ;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+}
+a:hover, a:active {
+    background-color: red;
+}
+**/
+</style>
+</head> 
+<body>
+<h1 style="color:tomato ;">HTML Links </h1>
+<p> <a href="http://10.64.11.59" target="_blank"> Cradle Hive </a>
+</p>
+    
+
+<!--absolute urls-->
+<p>
+<a href="https://www.google.com/" target="_blank"> Absolute URL </a>
+</p>
+<!--Relative url -->
+<p>
+<a href='xternal.html' target="_blank"> Relative URL </a>
+</p>
+<!--use an image as a link-->
+<p>
+<a href="xternal.html">
+<img src="t.jpg" alt="mypicture" style="width:42px ; height: 42px;" >
+</a>
+</p>
+<!--Linking email as link-->
+<p>
+<a href=" mailto:abioyebabatunde@gmail.com" style="color:tomato ;"> Send Email</a>
+</p>
+<!--button as a link-->
+<p><button onclick="document.location='xternal.html'"> Button Link </button>
+</p>
+<p> <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section"> Visit our HTML Tutorial </a>  </p>
+
+<!--Link color-->
+<h2>Link color</h2>
+<p>You can change the default colour of the link</p>
+<p> <a href="xternal.html" target="_blank"> External Link</a> </p>
+<!--Link Button-->
+<h2>Link button </h2>
+<p>A link styled as a button:</p>
+<a href="xternal.html"> External link </a>
+</body>   
+</html>

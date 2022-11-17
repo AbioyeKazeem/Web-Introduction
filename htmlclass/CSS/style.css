@@ -1,0 +1,657 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url('../img_girl.jpeg');
+    background-repeat: repeat-x;
+    background-position: right top;
+    background-attachment: scroll;
+   /* background: #ffffff url(../img_girl.jpeg) repeat-x fixed right top; */
+}
+h1{
+    color:navy;
+    margin-left: 20px;
+}
+p.lorem{
+    color: white;
+    background-color: #4c5c4c;
+    text-align: center;
+    border: 2px solid rgb(90,90,90);
+}
+h1#greeting{
+    color: white;
+    background-color:dodgerblue;
+    text-align: center;
+    border: 2px solid rgba(255, 99, 71, 0.5);
+}
+p.uti{
+    color: tomato;
+    border: 2px solid hsla(9, 100%, 64%, 0.5);
+}
+div{
+    background-color: mediumseagreen;
+    opacity: 0.6;
+    color: white;
+}
+
+/* opacity is for transparency of a background color */
+#par{
+    color: white;
+    background-color: yellow;
+    opacity:0.3;
+}
+h2{
+    background-color: green;
+    opacity: 0.8;
+    color: white;
+    width: 44%;
+    height: 40px;
+    padding: 10px;
+}
+h1.bord{
+    text-align: center;
+    font-size: 20px;
+    color: tomato;
+}
+p.bord2{
+   /* border: 1px medium mediumseagreen;
+    color: white; */
+    border-style: solid dotted dashed groove;
+    border-width: 5px;
+    color: white;
+    border-color: red green blue yellow;
+    border-radius: 8px;
+    padding: 10px;
+}
+p.diff{
+    border-top-style: solid ;
+    border-bottom-style:dashed;
+    border-left-style:dotted ;
+    border-right-style:groove ;
+    border-color: greenyellow;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 6px;
+    padding: 5px;
+}
+.short{
+    border-top:3px solid tomato;
+    border-left: 5px dashed green;
+    border-right: 5px dotted lightblue;
+    border-bottom: 5px groove greenyellow;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px; /* make your border rounded */
+    padding: 5px;
+}
+/* CSS margin properties are used to create space around elements,
+outside of any defined borders. */
+p.marg{
+    border: 2px dashed tomato;
+    font-size: 20px;
+    text-align: justify;
+    color: green;
+    padding: 5px;
+    /* margin: 10px 10px 15px 8px; (Margin shorthand) */
+    /*
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    margin-left: 8px;
+    */
+    margin: auto;
+    width: 200px;
+}
+div{
+    margin-left: 40px;
+    border:1px solid black;
+    border-radius: 0.1;
+    background-color: tomato;
+    width:auto;
+
+}
+p.inherit{
+    margin-left: inherit;
+}
+.colap1{
+    border: 1px solid green;
+    margin: 0 0 50px 0;
+    color: black;
+}
+.colap2{
+    margin:20px 0 0 0;
+    border-style:dashed;
+    border-width: 2px;
+    border-color:black;
+    background-color: white;
+    color:white;
+    opacity: 0.8;
+    color: black;
+}
+
+/* The CSS padding properties are used to generate space around an element's content, inside of any defined borders.*/
+.pad{
+    border-style: solid;
+    border-color: green;
+    margin: auto;
+    border-width: 1px;
+    padding:  70px;
+    font-size: 20px;
+}
+.padd{
+    border: 1px solid black;
+    background-color: lightblue;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    color: black;
+    opacity: 0.8;
+}
+div.pad-width{
+    border: 1px solid lightblue;
+    background-color: lightblue;
+    padding:25px;
+    width: 300px;
+    color: black;
+}
+
+div.dim{
+    border: 1px solid lightblue;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 20px 0 0 0;
+    width: initial;
+    height: 50px;
+    color: black;
+    opacity: 0.8;
+    margin: 20px 0 0 20px;
+}
+.dim1 {
+    background-color: lightblue;
+    height: 100px;
+   /*width: 500px; */
+    opacity: 0.9;
+    margin: 10px;
+    padding: 40px;
+    min-width: 100px;
+    max-width: 400px;
+     }
+div.cssbox-models{
+    width: 300px;
+    border: 1px solid tomato;
+    padding: 50px;
+    margin: 20px;
+}
+div.klematic{
+    border: 5px solid green;
+    width:320px ;
+    height:none;
+    padding: 20px;
+    margin: 0;
+}
+div.outline{
+    border: 1px solid black;
+    outline: 4px solid tomato;
+    background-color: white;
+    color: black;
+    max-width: 380px;
+    min-width: 100px;
+    height: 50px;
+    padding: 12px;
+}
+p.ofset{
+    border: 1px solid black;
+    outline: 1px solid red;
+    outline-offset: 15px;
+    padding: 10px;
+    margin: 30px;
+}
+div.txt{
+    background-color: white;
+}
+h2.txt1{
+    text-transform: uppercase;
+    color: green;
+    text-align: left;
+    background-color: lightgrey;
+    opacity: 0.8;
+    font-size: 20px; 
+    font-weight: bolder;
+}
+.txt2{
+    text-align: justify;
+    text-indent: 50px;
+    letter-spacing: 3px;
+    color: black;
+}
+a{
+    color: rgb(3, 77, 102);
+    text-decoration: none;
+}
+p.text-direction{
+background-color: white;
+color: black;
+direction: rtl;
+}
+.unicode{
+        background-color: white;
+        color: black;
+        direction: rtl;
+        unicode-bidi: bidi-override;
+}
+img.text-top{
+    vertical-align: text-top;
+}
+img.text-bottom{
+    vertical-align: text-bottom;
+}
+img.sup{
+    vertical-align: super;
+}
+img.sub{
+    vertical-align: sub;
+}
+.trs-dec{
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.trs-dec2{
+    text-decoration: 2px dashed line-through red;
+    text-transform: capitalize;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p.txt-indent{
+    text-indent: 50px;
+    word-spacing: 2px;  /* spacing the words in the letters */
+    
+}
+/* Spacing of letters */
+h3{
+    letter-spacing: 3px;
+}
+.small-linespace{
+    line-height: 0.3;
+}
+.big-linespace{
+    line-height: 1.2;
+    word-spacing: 5px;
+}
+.whitespace{
+    white-space: nowrap;
+}
+.shad{ 
+    text-shadow: 2px 2px;
+}
+.shad2{
+    text-shadow: 2px 2px red;
+}
+.shad3{
+    color: green;
+    text-shadow: 2px 2px 5px red;
+}
+.font-demo{
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: oblique;
+    font-display:  none;
+    font-variant: normal;
+}
+.gogl-font{
+    font-family: Sofia,sans-serif,Trirong,serif, "Audiowave", sans-serif;
+}
+.a{
+    font-family: "Audiowave", sans-serif;
+}
+.b{
+    font-family: sofia,sans-serif;
+}
+.c{
+    font-family: Trirong, serif;
+}
+.georgia{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.verdana{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-indent: 20px;
+    margin-top: -20px;
+}
+@media only screen and (max-width:500px) {
+
+    /* For mobile phones: */
+    .menu,
+    .main,
+    .right {
+        width: 100%;
+    }
+}
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width: 800px) {
+
+    .left,
+    .main2,
+    .right2 {
+        width: 100%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+    }
+}
+
+a{
+    color: hotpink;
+    margin-top: -50%;
+}
+/*
+The four links states are: 
+a:link - a normal,
+a:visited - a link the user has visited
+a:hover - a link when the user mouses over it
+a:active - a link the moment it is clicked
+*/
+a:link{
+    color: red;
+    text-decoration: none;
+    background-color: yellow;
+}
+a:visited{
+    color: green;
+    text-decoration: none;
+    background-color: cyan;
+}
+a:hover{
+    color: hotpink;
+    text-decoration: none;
+    background-color: lightgreen;
+}
+a:active {
+    color:blue;
+    text-decoration: none;
+    background-color: hotpink;
+}
+.linka{
+margin-top: -15px;
+}
+
+
+a.links, a.visits{
+    background-color: #f44336;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 25px;
+    display: inline-block;
+}
+a.hovers, a.actives {
+    background-color: red;
+}
+ul.lista{
+    list-style-type: circle;
+
+}
+ul.listb{
+    list-style-type: square;
+}
+ol.ol1{
+    list-style-type: upper-roman;
+    margin-top: -10px;
+}
+ol.ol2{
+    list-style-type: lower-alpha;
+}
+ul.d{
+    list-style-position: outside;
+    margin-top: -5px;
+}
+
+ul.e{
+    list-style-position: inside;
+    margin-top: -5px;
+    list-style: square;
+    background: tomato;
+    padding: 20px;
+    
+}
+ul.e li{
+    background-color: white;
+    color: white;   
+}
+
+.tab-css{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+#customers{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+#customers th, #customers td{
+    border: 1px solid #dddd;
+    padding: 8px;
+}
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+#customers tr:hover {
+    background-color: #ddd;
+}
+#customers th{
+    background-color: tomato;
+    text-align: left;
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+table, th, td{
+    border:1px solid ;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;  /* Note: Border collapse remove double border and turn it to single border */
+    margin-bottom: 40px;
+}
+th{
+     height: 40px;
+    vertical-align: bottom;
+}
+
+th, td{
+    padding:15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+tr:hover{
+background-color: coral;
+}
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+th{
+    background-color: #04AA6D;
+    color: white;
+}
+li{
+    display: inline;
+    padding: 30px;   
+}
+
+#list-a{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+span{
+    display:block;
+}
+
+.hidden{
+    display:none;
+   /* visibility: hidden; */
+}
+div.ex1{
+    width: 500px;
+    margin: auto;
+    border: 3px solid red;
+}
+
+div.ex2{
+    max-width: 500px;
+    margin: auto;
+    border: 3px solid black;
+}
+div.static{
+    position: static;
+    border: 3px solid #73AD21;
+    background-color: white !important;
+    color:black;
+    font-weight: bolder;
+}
+div.relative {
+    position: relative;
+    border: 3px solid #73AD21;
+    left: 50px;
+    background-color: white !important;
+    color: black;
+    font-weight: bolder;
+}
+
+div.fixed{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    color: blue;
+    font-weight: bolder;
+    border-radius: 8px;
+    width: 300px;
+}
+div.absolute{
+position: absolute;
+width: 300px;
+background-color: white;
+color: black;
+left: 2px;
+}
+div.relative2 {
+    position: relative;
+    border: 3px solid #73AD21;
+    left: 50px;
+    background-color: white !important;
+    color: black;
+    font-weight: bolder;
+    width: 400px;
+    height: 300px;
+}
+div.absolute2 {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    color: black;
+    right:0;
+    top: 80px;
+    border: 3px solid #73AD21 ;
+}
+
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+    color: black;
+}
+
+img.tree{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+#overflowTest{
+    color: white;
+    background-color: coral;
+    padding: 15px;
+    width: 30%;
+    height: 60px;
+    border: 1px solid #ccc;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-size: 15px;
+}
+
+.imgfloaty{
+    float: left;
+    width:170px;
+    height: 80px;
+    margin-left: 15px;
+    padding-bottom: 40px;
+}
+.divfloaty{
+    float: left;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+.div1{
+    background-color: red;
+    color: black;
+}
+.div2{
+    background-color: yellow;
+    color: black;
+}
+.div3{
+    background-color: green;
+    color: black;
+    padding-bottom: 40px;
+}
+
+.dive1{
+    float: left;
+    border: 2px solid black;
+    padding: 10px;
+}
+.dive2{
+    padding: 10px;
+    float: left;
+    border: 2px solid black;
+}
+.div3 {
+    float: left;
+    padding: 10px;
+    border: 3px solid #73AD21;
+}
+
+.div4 {
+    padding: 10px;
+    border: 3px solid red;
+    clear: left;
+}
+
+
+div {
+    border: 3px solid #4CAF50;
+    padding: 5px;
+}
+
+.img1 {
+    float: right;
+}
+
+.img2 {
+    float: left;
+}
+
+div.clearfix {
+    overflow: auto;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+    box-sizing: border-box;
+    color: white;
+}
+body {
+    background-color: lightblue;
+    text-align: center;
+}  
+h1, h2{
+    color: white;
+}  
+#para1{
+    /** Using ID as selector **/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: red;
+    text-align: center; 
+}
+.left{
+    /** using class as a selector **/
+    color: tomato;
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+p.right{
+    /** specific HTML elements should be affected by a class **/
+    color: green;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: right;
+}
+p.large{
+    font-size: 100px;
+
+}
+.center {
+    text-align: center;
+    color: gold;
+}
+</style>
+<title> My First CSS </title> 
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+</head>    
+<body>
+<h1>My First CSS</h1>    
+<h2>Selectors</h2>
+<p id="para1">First paragraph</p>
+<p class='left'>Second paragraph </p>
+<p class="right">Third paragraph</p>
+<p class="center large">Center large</p>
+</body>
+</html>

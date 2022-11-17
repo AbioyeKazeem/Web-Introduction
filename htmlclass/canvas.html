@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<title>Canvas</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<meta charset="utf-8"> 
+<style>
+*{box-sizing: border-box;}
+body {border:2px solid tomato ; 
+padding: 10px; 
+padding-top:10px ; 
+margin: 10px; 
+         }    
+</style> 
+</head>  
+<body>
+<h2>Canvas Example</h2>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3 ;">
+Your browser does not support the html canvas tag
+<script>
+    c = document.getElementById("myCanvas");
+    ctx = c.getContext("2d");
+    ctx.moveTo(0, 0);
+    ctx.lineTo(200, 100);
+    ctx.stroke();
+</script>
+</canvas>
+<h2>Drawing a circle</h2>
+<canvas id="mycanva" width="200" height="100" style="border:1px solid #d3d3d3;">
+</canvas>
+<script>
+c = document.getElementById("mycanva");
+ctx= c.getContext('2d');
+ctx.beginPath();
+ctx.arc(95,50,40, 0, 2 * Math.PI)
+ctx.stroke();
+</script>
+<h2>Drawing a text</h2>
+<canvas id="myCanva" width="200" height="100" style="border:1px solid #d3d3d3;">
+</canvas>
+<script>
+c = document.getElementById('myCanva');
+ctx = c.getContext('2d');
+ctx.font='30px Arial';
+ctx.fillText("Hello world",10,50);
+</script>
+<h2>Stroke Text</h2>
+<canvas id="stroke" width="200" height="100" style="border:1px solid #d3d3d3 ;">
+</canvas>
+<script>
+a = document.getElementById('stroke');
+atx = a.getContext('2d');
+atx.font="30px Verdana";
+atx.strokeText("Hello world", 10, 50);
+</script>
+<h2>Draw Linear Gradient</h2>
+<canvas id="lineargrad" width="200" height="100" style="border:1px solid #3d3d3d ;">
+</canvas>
+<script>
+b = document.getElementById("lineargrad");
+btx = b.getContext('2d');
+// create gradient
+grd = btx.createLinearGradient(0,0,200,0);
+grd.addColorStop(0, 'red');
+grd.addColorStop(1, 'white');
+
+//fill with gradient
+btx.fillStyle = grd;
+btx.fillRect(10,10, 150, 80);
+</script>
+
+<h2>draw Image</h2>
+<p>image to use:</p>
+<img src="img_the_scream.jpeg" alt="The scream" width="220" height="277" id="scream" >
+<p>Canvas to fill:</p>
+<canvas id="draw_img" width="250" height="300" style="border:1px solid #d3d3d3;">
+Your browser does not support the canvas.
+</canvas>
+<p><button onclick="draw_img()">Try it</button></p>
+<script>
+function draw_img(){
+        d = document.getElementById("draw_img");
+        dtx = d.getContext('2d');
+        img = document.getElementById('scream');
+        dtx.drawImage(img, 10, 10);
+                   }
+</script>
+</body>
+</html>
